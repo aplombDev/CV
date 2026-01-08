@@ -11,6 +11,6 @@ const getBranchName = () => {
 export default mergeConfig(
     viteConfig,
     defineConfig({
-        base: `/CV/branch/${getBranchName()}`,
+        base: `/CV/branch/${getBranchName()}/`,
     })
 );

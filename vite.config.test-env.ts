@@ -12,6 +12,6 @@ const getTestEnvName = () => {
 export default mergeConfig(
     viteConfig,
     defineConfig({
-        base: `/CV/env/${getTestEnvName()}`,
+        base: `/CV/env/${getTestEnvName()}/`,
     })
 );
