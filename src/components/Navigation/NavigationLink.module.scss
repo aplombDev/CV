@@ -1,0 +1,39 @@
+.navigation-link {
+    text-transform: uppercase;
+    margin: 0 20px;
+    letter-spacing: 0px;
+    animation: letter-spacing-animation 0.6s ease-in 1s forwards;
+    transition: color 0.2s ease-in;
+    position: relative;
+    &.selected {
+        color: var(--color-grey-unchanged);
+    }
+    > .text {
+        &.grey {
+            color: var(--color-grey);
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            overflow: hidden;
+            transition: width 0.6s;
+            white-space: nowrap;
+            width: 0;
+        }
+    }
+    &:hover {
+        > .text {
+            &.grey {
+                width: 100%;
+            }
+        }
+    }
+}
+
+@keyframes letter-spacing-animation {
+    0% {
+        letter-spacing: 0px;
+    }
+    100% {
+        letter-spacing: 2px;
+    }
+}

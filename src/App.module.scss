@@ -1,0 +1,45 @@
+@use "@/colors.scss" as *;
+@use "@/fonts.scss" as *;
+
+div.app {
+    text-align: center;
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 16px;
+    padding-right: 16px;
+    font-family: Calibri;
+    font-size: 1.1rem;
+}
+
+html,
+body {
+    position: relative;
+    overflow-x: hidden;
+}
+
+body {
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    background-color: var(--bg);
+    color: var(--fg);
+    &:has(.app.dark-mode) {
+        --bg: var(--dark-mode-background);
+        --fg: var(--dark-mode-foreground);
+        --color-grey: rgb(240, 241, 240);
+        --color-light-grey: rgb(103, 103, 103);
+    }
+}
+
+a {
+    color: var(--fg);
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+    padding-inline-start: 0;
+}
