@@ -43,7 +43,7 @@ const Main: FC<IMainProps> = (props) => {
                         {props.activeTab.toLocaleLowerCase() !== "work" && (
                             <Others />
                         )}
-                        <a href="./CV.pdf" download="KimAnhNguyen - CV">
+                        <a href="./aayush_joshi_resume.pdf" download="Joshi Aayush - CV">
                             <DownloadButton />
                         </a>
                     </>
@@ -66,8 +66,8 @@ const Main: FC<IMainProps> = (props) => {
                             }
                         />
                         <a
-                            href="./CV.pdf"
-                            download="KimAnhNguyen - CV"
+                            href="./aayush_joshi_resume.pdf"
+                            download="Joshi Aayush - CV"
                             id="main-download-button"
                         >
                             <DownloadButton />
